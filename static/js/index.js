@@ -8,19 +8,19 @@ $(function () {
             window.location.href = "index.html"
         })
         $(".care").hover(function () {
-            $(this).attr('src', "../images/header/care1.png");
+            $(this).attr('src', "/static/images/header/care1.png");
         }, function () {
-            $(this).attr('src', "../images/header/care.png");
+            $(this).attr('src', "/static/images/header/care.png");
         });
         $(".order").hover(function () {
-            $(this).attr('src', "../images/header/order1.png");
+            $(this).attr('src', "/static/images/header/order1.png");
         }, function () {
-            $(this).attr('src', "../images/header/order.png");
+            $(this).attr('src', "/static/images/header/order.png");
         });
         $(".shopcar").hover(function () {
-            $(this).attr('src', "../images/header/shop_car1.png");
+            $(this).attr('src', "/static/images/header/shop_car1.png");
         }, function () {
-            $(this).attr('src', "../images/header/shop_car.png");
+            $(this).attr('src', "/static/images/header/shop_car.png");
         });
 
         //搜索跳转
@@ -79,12 +79,12 @@ $('.seek').focus(function () {
 
         $(this).removeClass('clickhover');
         $(this).find('.seek_content').hide();
-        $(this).find('img').attr('src', '../images/header/header_normal.png');
+        $(this).find('img').attr('src', '/static/images/header/header_normal.png');
 
     } else {
         $(this).addClass('clickhover');
         $(this).find('.seek_content').show();
-        $(this).find('img').attr('src', '../images/header/header_true.png');
+        $(this).find('img').attr('src', '/static/images/header/header_true.png');
     }
 })
 $('.seek_content>div').click(function () {
@@ -92,7 +92,7 @@ $('.seek_content>div').click(function () {
     var text = $(this).html();
     $('.seek span').html(text);
     $(this).parent().hide();
-    $('.seek').find('img').attr('src', '../images/header/header_normal.png');
+    $('.seek').find('img').attr('src', '/static/images/header/header_normal.png');
     $('.seek').blur();
 
 })
@@ -102,7 +102,7 @@ $('.seek').blur(function () {
     $('.seek').removeClass('clickhover');
     $('.seek_content').hide();
 
-    $('.seek').find('img').attr('src', '../images/header/header_normal.png');
+    $('.seek').find('img').attr('src', '/static/images/header/header_normal.png');
     console.log(1);
 })
 

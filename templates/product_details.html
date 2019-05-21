@@ -613,7 +613,7 @@ A ny individuals and organizations and not for commercial use, professiona websi
                         2: '背包',
                         3: '手提包'
                     }
-                    $('#mImg').attr('src', baseUrl + '/images' + result.data.bigimg[0])
+                    $('#mImg').attr('src','/static/images' + result.data.bigimg[0])
                     var img = $("#icon_list").find('img')
 {#                    img[0].src = baseUrl + '/images' + result.data.smallimg[0]#}
 {#                    img[1].src = baseUrl + '/images' + result.data.smallimg[1]#}
@@ -624,7 +624,7 @@ A ny individuals and organizations and not for commercial use, professiona websi
                     for (var key in result.data.smallimg) {
                         smallHTML +=
                             `
-                            <li class="i1"><img src="${baseUrl + '/images' + result.data.smallimg[key]}" /></li>
+                            <li class="i1"><img src="${'/static/images' + result.data.smallimg[key]}" /></li>
                         `
                     }
                     $("#icon_list").html(smallHTML)
@@ -636,7 +636,7 @@ A ny individuals and organizations and not for commercial use, professiona websi
                     for (var key in result.data.smallimg) {
                         introductionimg +=
                             `
-                            <li class="i1"><img src="${baseUrl + '/images' + result.data.introimg[key]}" /></li>
+                            <li class="i1"><img src="${'/static/images' + result.data.introimg[key]}" /></li>
                         `
                     }
                     $("#icon_list_introduction").html(introductionimg)

@@ -27,10 +27,13 @@ def goodetail_views(request):
 
         # 处理产品对应的图像
         bigimg = []#大图列表
-        smallimg = []#小图列表
+        smallimg = {}#小图字典
         for img in goodimg:
-            bigimg.append(str(img.goodsimgbig))
-            smallimg.append(str(img.goodsimg))
+            bigimg.append(str(img.goodsimgbig)+'/0.jpg')
+            smallimg['1'] = str(img.goodsimg) + '/0.jpg'
+            smallimg['2'] = str(img.goodsimg) + '/1.jpg'
+            smallimg['3'] = str(img.goodsimg) + '/2.jpg'
+            smallimg['4'] = str(img.goodsimg) + '/3.jpg'
 
         # 处理gooddetail
         spelist = []
